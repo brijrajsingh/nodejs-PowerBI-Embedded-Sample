@@ -1,0 +1,24 @@
+{
+  "name": "osinodejs",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "bower": "^1.8.0",
+    "express": "3.1.0",
+    "html": "*",
+    "ms-rest": "^1.15.4",
+    "powerbi-api": "^1.1.4"
+  },
+  "description": "this is a nodejs application to showcase usage of POwerBI Sdk for NodeJS",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "brijraj singh",
+  "license": "ISC"
+}

@@ -1,0 +1,3 @@
+username osimeanuser
+password Windows@32 / Windows@1234
+ 

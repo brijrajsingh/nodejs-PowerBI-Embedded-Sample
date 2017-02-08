@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%- JSON.stringify(title) %></title>
+	<script type="text/javascript">
+		function doinit(){
+			var element = document.getElementById('myReport');
+			var report = powerbi.embed(element);
+			console.log("initDOne")
+		}
+	</script>
+</head>
+<body>
+
+<button onclick="doinit()">Press me to init</button>
+
+<div id="myReport"
+	powerbi-type="report"
+    powerbi-embed-url="https://embedded.powerbi.com/appTokenReportEmbed?reportId=06a4c6ae-fffa-42c3-a2b7-c28080a3d496" 
+    powerbi-access-token=<%- JSON.stringify(jwt) %> style="height: 600px;"
+</div>
+
+<script src="powerbi.min.js"></script>
+<script type="text/javascript">
+   var reportDiv = document.getElementById("myReport");
+   var title =  <%- JSON.stringify(title) %>;
+   var jwtValue = <%- JSON.stringify(jwt) %>;
+   console.log(jwtValue);
+   reportDiv.setAttribute("powerbi-access-token",jwtValue);
+   console.log(jwtValue);
+</script>
+</body>
+</html>
