@@ -10,11 +10,14 @@
     "express": "3.1.0",
     "html": "*",
     "ms-rest": "^1.15.4",
-    "powerbi-api": "^1.1.4"
+    "powerbi-api": "^1.1.4",
+    "ejs": "*"
   },
   "description": "this is a nodejs application to showcase usage of POwerBI Sdk for NodeJS",
   "main": "app.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "ejs": "^2.5.5"
+  },
   "repository": {
     "type": "git",
     "url": ""

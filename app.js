@@ -23,13 +23,14 @@ app.use(express.static(__dirname + '/public'));
 //index
 app.get('/', function(req, res){
 
-var token = powerbi.PowerBIToken.createReportEmbedToken('ws-PBIE', 'aed61f50-0855-4f4e-939a-a219e088cc9d', '06a4c6ae-fffa-42c3-a2b7-c28080a3d496');
+var token = powerbi.PowerBIToken.createReportEmbedToken('ws-PBIE', 'd04009df-c718-496b-b5c2-80ace4cf6c54', 'ce37eec6-1cfd-45fd-9323-1e505223c2fa');
 
-var jwtoken = token.generate('WSLT0xaqb5uJYDzDIcA5IgX2t+wUdHJBpfcfY2yMINv3lxgBFysAtvyT02cuiF3DW6CyqYisz0Vi5e7bVgDJ7g==');
+var jwtoken = token.generate('CInQiGYqdUgZFLtWZelPzMAPo1LXG5UiLR3tdEUfBeTRqiWnE3JjIGqVrEUracQ6YHgI0T5vBh5u3nVKI4TAOw==');
+
 console.log(jwtoken);
 
      res.render('index.html', {
-            title: 'PowerBI Report',jwt:jwtoken
+            title: 'PowerBI with Docker',jwt:jwtoken
       });
       res.end();
 });
